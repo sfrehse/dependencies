@@ -47,7 +47,7 @@ build_install() {
   make install 
 
   cat > $target/cppunit-config.cmake <<EOF
-et(cppunit_VERSION 1.12.1)
+set(cppunit_VERSION 1.12.1)
 set(cppunit_BIN_DIRS  $target/bin/ )
 set(cppunit_INCLUDE_DIRS  $target/include )
 set(cppunit_LIBRARIES  $target/lib/libqttestrunner.a $target/lib/libcppunit.a )
